@@ -1,0 +1,104 @@
+ /** Tables */
+ 
+table.wpdispensary-table {
+  background: $color__white;
+  border-width: 1px;
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 12px 0;
+  table-layout: unset;
+  width: 100%;
+
+  td {
+    border: 1px solid $color__gray;
+    padding: 10px;
+    width: 50%;
+  
+    &.wpdispensary-title {
+      background: $color__off-white;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+      color: $color__dark-gray;
+      font-weight: $font-semi-bold;
+      text-align: center;
+    }
+  
+    span {
+      color: $color__dark-gray;
+      font-weight: $font-semi-bold;
+      margin-right: 10px;
+    }
+
+  }
+
+  &.pricing {
+
+    td {
+      color: $color__green;
+      width: auto;
+
+      &.wpdispensary-title {
+        color: $color__dark-gray;
+      }
+
+    }
+
+    tr.priceeach {
+
+      td {
+        width: 50%;
+      }
+
+    }
+
+  }
+
+  &.compound-details {
+
+    td {
+      width: auto;
+    }
+
+  }
+
+  &.single {
+    margin: 24px 0;
+
+    &.details {
+      
+      &.compound-details {
+
+        td {
+          color: $color__dark-gray;
+        }
+
+      }
+
+    }
+
+  }
+
+  &.ingredientlist {
+    border: 1px solid $color__gray;
+    float: left;
+    font-size: 15px;
+    line-height: 18px;
+    margin-top: 24px;
+    width: 100%;
+  
+    span {
+      display: inline-block;
+      padding: 10px;
+    }
+  
+    strong {
+      background: $color__gray;
+      color: $color__dark-gray;
+      display: block;
+      font-weight: $font-semi-bold;
+      padding: 10px;
+    }
+  
+  }
+
+}
